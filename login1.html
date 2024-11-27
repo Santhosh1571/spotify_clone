@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website</title>
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container-fluid bg-dark text-light p-4">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="icon.png" style="width: 30px; height: 30px;" alt="Logo" class="logo">
+        <h3 class="ms-3">Music Stream</h3>
+      </div>
+      <div>
+        <input type="text" class="form-control search-bar" placeholder="Search Songs">
+      </div>
+      <div>
+        <a href="index.html"><button class="btn btn-outline-light me-2">Login</button></a>
+        <a href="subscribe.html"><button class="btn btn-primary">Manage Subscription</button></a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="mt-4">
+      <ul class="nav nav-pills" style="margin-left: 200px;">
+        <li class="nav-item">
+          <a class="nav-link
+          " href="login1.html">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/trend.html">Trending Now</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/old.html">Old Songs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/new.html">New Songs</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./navitem/./navitem/mood.html"">Moods & Genre</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./navitem/mood.html">Motivate</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">Romance</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">kuththu</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">bus vibes</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">soup songs</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">Part vibes</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">Appa songs</a></li>
+            <li><a class="dropdown-item" href="./navitem/mood.html">Amma songs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/album.html">Top Albums</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/artist.html">Top Artists</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./navitem/lib.html">library</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Artist Section -->
+    <section class="mt-5">
+      <h4 class="text-right mb-4">Top Tamil Music Director</h4>
+      <div class="row text-center">
+        <!-- Artist Card -->
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a7.html')">
+            <img src="1.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>D Imman</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a8.html')">
+            <img src="2.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>Yuvan</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a9.html')">
+            <img src="3.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>Anirudh Ravichander</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a10.html')">
+            <img src="4.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>Illayaraja</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a11.html')">
+            <img src="5.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>AR Rahman</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4">
+          <div class="artist-card" onclick="navigateToPage('/albums/a12.html')">
+            <img src="6.jpg" alt="Artist" style="width: 150px; height: 150px;" class="rounded-circle artist-image">
+            <p>Vijay Antony</p>
+          </div> 
+        </div>
+      </div>
+      <h2 class="text-white text-center">Popular radio</h2>
+      <div class="row justify-content-center g-3">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="11.jpg" style="width: 160px; height: 160px;" alt="Arijit Singh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>TAKKAR</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a2.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="12.jpg" style="width: 160px; height: 160px;" alt="Diljit Dosanjh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Thuppakki</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a3.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="kandukondain-kandukondain.jpg" style="width: 160px; height: 160px;" alt="Kumar Sanu">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Kandukondain-Kandukondain</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a4.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="14.jpg" style="width: 160px; height: 160px;" alt="KK">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Azhagiya Tamil Magan</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a5.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="15.jpg" style="width: 160px; height: 160px;" alt="Shreya Ghoshal">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Jilla</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a6.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="34.jpg" style="width: 160px; height: 160px;" alt="A.R. Rahman">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Vettaiyan</h3>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-all text-center d-block mt-3">Show all</a>
+      <h2 class="text-white text-center">Popular radio</h2>
+      <div class="row justify-content-center g-3">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a7.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="17.jpg" style="width: 160px; height: 160px;" alt="Arijit Singh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>NANBAN</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a8.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="18.jpg" style="width: 160px; height: 160px;" alt="Diljit Dosanjh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Diljit Dosanjh</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="19.jpg" style="width: 160px; height: 160px;" alt="Kumar Sanu">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Kumar Sanu</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="20.jpg" style="width: 160px; height: 160px;" alt="KK">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>KK</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="21.jpg" style="width: 160px; height: 160px;" alt="Shreya Ghoshal">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Shreya Ghoshal</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="22.jpg" style="width: 160px; height: 160px;" alt="A.R. Rahman">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>A.R. Rahman</h3>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-all text-center d-block mt-3">Show all</a>
+      <h2 class="text-white text-center">Popular radio</h2>
+      <div class="row justify-content-center g-3">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="23.jpg" style="width: 160px; height: 160px;" alt="Arijit Singh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Arijit Singh</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="24.jpg" style="width: 160px; height: 160px;" alt="Diljit Dosanjh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Diljit Dosanjh</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="25.jpg" style="width: 160px; height: 160px;" alt="Kumar Sanu">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Kumar Sanu</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="26.jpg" style="width: 160px; height: 160px;" alt="KK">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>KK</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="27.jpg" style="width: 160px; height: 160px;" alt="Shreya Ghoshal">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Shreya Ghoshal</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="28.jpg" style="width: 160px; height: 160px;" alt="A.R. Rahman">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>A.R. Rahman</h3>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-all text-center d-block mt-3">Show all</a>
+      <h2 class="text-white text-center">Popular radio</h2>
+      <div class="row justify-content-center g-3">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="29.jpg" style="width: 160px; height: 160px;" alt="Arijit Singh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Arijit Singh</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')" >
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="30.jpg" style="width: 160px; height: 160px;" alt="Diljit Dosanjh">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Diljit Dosanjh</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="31.jpg" style="width: 160px; height: 160px;" alt="Kumar Sanu">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Kumar Sanu</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="32.jpg" style="width: 160px; height: 160px;" alt="KK">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>KK</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="33.jpg" style="width: 160px; height: 160px;" alt="Shreya Ghoshal">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>Shreya Ghoshal</h3>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+          <div class="radio-card" onclick="navigateToPage('/albums/a1.html')">
+            <p>RADIO</p>
+            <div class="radio-image">
+              <img src="34.jpg" style="width: 160px; height: 160px;" alt="A.R. Rahman">
+              <div class="play-button">
+                <i class="fa fa-play"></i>
+              </div>
+            </div>
+            <h3>A.R. Rahman</h3>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-all text-center d-block mt-3">Show all</a>
+
+
+    </section>
+
+    
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

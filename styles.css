@@ -1,0 +1,219 @@
+body {
+  background-color: #121212;
+  color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.logo {
+  height: 50px;
+}
+
+.search-bar {
+  width: 300px;
+}
+
+.nav-link {
+  color: #ccc;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: white;
+  background-color: #1db954;
+}
+
+.artist-card {
+  padding: 10px;
+}
+
+.hrt {
+  margin-right: 20px;
+}
+
+.artist-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #1db954;
+}
+
+.artist-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.radio-card h3 {
+  margin: 10px 0 0;
+  color: white;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
+.show-all {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+}
+
+.show-all:hover {
+  text-decoration: underline;
+}
+
+.radio-card {
+  text-align: center;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.radio-card:hover {
+  transform: rotateY(15deg) rotateX(10deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.radio-image img {
+
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.radio-card:hover .radio-img {
+  transform: scale(1.1);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+  opacity: 0;
+  padding: 14px;
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.radio-image:hover .play-button {
+  opacity: 1;
+  box-shadow: 0 0 15px 3px rgb(220, 220, 85);
+  /* Neon glow effect */
+}
+
+.radio-image {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.heart-btn {
+  z-index: 10;
+  /* Ensure it stays above other elements */
+  border-radius: 50%;
+  /* Make it circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-btn:hover {
+  background-color: #ffcccc;
+  border-color: #ff0000;
+}
+/* General mobile-friendly adjustments */
+@media (max-width: 768px) {
+  /* Adjust header elements */
+  .d-flex.align-items-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    margin-bottom: 5px;
+  }
+
+  /* Adjust navigation menu */
+  nav ul.nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  nav ul.nav li.nav-item {
+    margin-bottom: 10px;
+    margin-right: 180px;
+  }
+
+  /* Artist and Radio sections */
+  .artist-card img,
+  .radio-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .artist-card p,
+  .radio-card h3 {
+    font-size: 14px;
+  }
+
+  .row .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .row .col-sm-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* Show-all link adjustments */
+  .show-all {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Smaller screens (less than 576px) */
+@media (max-width: 576px) {
+  .artist-card img,
+  .radio-image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .artist-card p,
+  .radio-card h3 {
+    font-size: 12px;
+  }
+
+  .show-all {
+    font-size: 14px;
+  }
+}
